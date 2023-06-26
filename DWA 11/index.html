@@ -9,4 +9,74 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" href="css/stylesheet.css">
 <script src="script.js" defer type="module"></script>
-</head>
+</head><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.1/cdn/themes/light.css" />
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.1/cdn/shoelace-autoloader.js"></script>
+        <script type="module" src="scripts.js" defer ></script>
+        <script type="module" src="store.js" defer> </script>
+        <title>Tally Count</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">
+                Tally Count
+            </h1>
+        </header>
+
+        <aside class="controls">
+            <label>
+                <sl-select label="Display">
+                    <sl-option value="option-1">Single</sl-option>
+                    <sl-option value="option-2">Multiple</sl-option>
+                </sl-select>
+            </label>
+
+            <label>
+                <sl-select label="Counter">
+                    <sl-option value="option-1">Option 1</sl-option>
+                    <sl-option value="option-2">Option 2</sl-option>
+                    <sl-option value="option-3">Option 3</sl-option>
+                </sl-select>
+            </label>
+
+            <sl-button variant="default" size="large">
+                <sl-icon slot="prefix" name="gear"></sl-icon>
+                Settings
+            </sl-button>
+            
+        </aside>
+        <main class="counter">
+            <input data-key="number" class="counter__value"  readonly value=" 0">
+            <div class="counter__actions">
+
+                <sl-button data-key="subtract" class="counter__button counter__button_first" varient="primary" size="large">
+                    <sl-icon name="dash-square-fill"></sl-icon>
+                    Subtract
+                </sl-button>
+
+                <sl-button data-key="add" class="counter__button" varient="primary" size="large">
+                    <sl-icon name="plus-square-fill"></sl-icon>
+                    Add
+                </sl-button>
+            </div>
+
+            <sl-button data-key="reset" class="reset_button" variant="danger" size="large">
+                <sl-icon name="arrow-counterclockwise"></sl-icon>
+                Reset
+            </sl-button>
+        </main>
+        <footer class="footer">
+            Inspired by <a class="footer__link" href="https://tallycount.app/">Tally Count</a>. Note that this is merely a student practice project for learning JavaScript. 
+        </footer>
+    </body>
+</html>
