@@ -79,5 +79,5 @@ class Store {
   console.log('Scenario 4');
   store.dispatch({ type: 'RESET' });
   
-  // Unsubscribe from state changes
+  //Removes the previously subscribed listener from receiving further state changes.
   unsubscribe();
