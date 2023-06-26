@@ -4,7 +4,8 @@ const MIN_NUMBER = -5
 const number = document.querySelector('[data-key="number"]')
 const subtract = document.querySelector('[data-key="subtract"]')
 const add = document.querySelector('[data-key="add"]')
-const reset = document.querySelecrtor('[data-key="reset"]')
+const reset = document.querySelector('[data-key="reset"]')
+
 
 const subtractHandler = () => {
     const newValue = parseInt(number.value) -1
