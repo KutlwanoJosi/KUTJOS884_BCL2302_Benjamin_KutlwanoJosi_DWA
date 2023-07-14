@@ -1,8 +1,9 @@
 import React from "react"
 import Navbar from "./components/Navbar"
 import Main from "./components/Main"
+import "./App.css"
 
-export default function App() {
+function App() {
     return (
         <div className="container">
             <Navbar />
@@ -10,3 +11,5 @@ export default function App() {
         </div>
     )
 }
+
+export default App;
